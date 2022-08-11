@@ -1,0 +1,22 @@
+<p>single works!</p>
+<div class="container">
+    <form (ngSubmit)="update()">
+      <div class="form-group">
+        <label for="name">NAME</label>
+        <input type="text" name="name" reference="name" class="text form-control" [(ngModel)]="product.name">
+      </div>
+      <div class="form-group">
+        <label for="name">description</label>
+        <input type="text" name="description" reference="description" class="text form-control" [(ngModel)]="product.description">
+      </div>
+      <div class="form-group">
+        <label for="name">QTY</label>
+        <input type="number" name="qty" reference="QTY" class="text form-control" [(ngModel)]="product.qty">
+      </div>
+      <div class="form-group">
+        <label for="name">PRICE</label>
+        <input type="number" name="price" reference="price" class="text form-control" [(ngModel)]="product.price">
+      </div>  <br>
+      <button type="submit" class="btn btn-primary">enregistrer</button>
+    </form>
+  </div>
